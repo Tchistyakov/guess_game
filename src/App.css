@@ -1,38 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap");
+
+html body * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 .App {
   text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: table-cell;
+  vertical-align: middle;
+  background: linear-gradient(360deg, #292e49 0%, #536976 100%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.frame {
+  width: 272px;
+  height: 328px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.form {
+  margin: 48px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text_inpt {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  text-align: center;
+  color: #FFFFFF;
+
+  border: 1px solid #292e49;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.text_bold {
+  text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.text_normal {
+  font-weight: 400;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+.h1 {
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 12px;
+}
+
+.h2 {
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 12px;
+}
+
+.h3 {
+  font-size: 28px;
+}
+
+.h4 {
+  font-size: 14px;
+  margin-top: 43px;
+}
+
+.success {
+  margin: 48px 0;
+}
+
+.input {
+  width: 127px;
+  height: 48px; 
+  margin-right: 12px;
+  background: rgba(41, 46, 73, 0.2);
+  font-size: 20px;
+}
+
+.btn {
+  height: 48px;
+  background: rgba(41, 46, 73, 0.6);
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-guess {
+  width: 127px;
+}
+
+.btn_start {
+  width: 183px;
+}
+
+.hide {
+  display: none;
 }
